@@ -1,0 +1,19 @@
+.movie_card{
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+    align-items: center;
+    text-align: left;
+    transition: all 400ms;
+}
+.movie_card:hover{
+    transform: scale(1.08);
+}
+.movie_card img{
+    width: 150px;
+    object-fit: cover;
+}
+.movie_card div:hover{
+    transition: all 400ms;
+    color: rgb(255, 72, 0);
+}
