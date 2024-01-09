@@ -1,0 +1,69 @@
+main {
+  height: auto;
+  min-height: calc(100vh - 160px);
+  background-color: #ccc;
+  padding-block: 1rem;
+}
+section {
+  padding: 15px 15px 0 15px;
+  margin: 0 auto;
+  width: auto;
+  position: relative;
+}
+section > h3 {
+  font-size: 1.5em;
+  color: rgb(255, 72, 0);
+  margin-bottom: 1rem;
+}
+.wrapper {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.movies_list {
+  display: flex;
+  flex-flow: row nowrap;
+  width: auto;
+  gap: 20px;
+}
+.arrow_left {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: auto;
+  font-size: 20px;
+  width: 50px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: linear-gradient(to left, transparent 0%, red 200%);
+  opacity: 0.1;
+  transition: all 400ms ease-in-out;
+}
+.arrow_right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: auto;
+  right: 0;
+  font-size: 20px;
+  width: 50px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: linear-gradient(to right, transparent 0%, red 200%);
+  opacity: 0.1;
+  transition: all 400ms ease-in-out;
+}
+.arrow_left:hover,
+.arrow_right:hover {
+  opacity: 1;
+}
