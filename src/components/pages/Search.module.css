@@ -1,0 +1,19 @@
+.container {
+  height: auto;
+  min-height: calc(100vh - 160px);
+  padding: 15px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #ccc;
+}
+.movies_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.container h2 {
+  padding: 1rem 2rem 2rem 2rem;
+  color: rgb(255, 72, 0);
+  text-align: left;
+}
