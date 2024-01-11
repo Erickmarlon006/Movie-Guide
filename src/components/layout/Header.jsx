@@ -20,7 +20,7 @@ function Header() {
     return (
         <header className={styles.header}>
             <nav>
-                <Link to="/Movie-Guide" element={<Home />}><h3>Movie Guide</h3></Link>
+                <Link to="/Movie-Guide/" element={<Home />}><h3>Movie Guide</h3></Link>
             </nav>
             <form onSubmit={(e) => handleSubmit(e)}>
                 <input type="text" onChange={(e) => setSearch(e.target.value)} placeholder="Pesquise um título" value={search} />
