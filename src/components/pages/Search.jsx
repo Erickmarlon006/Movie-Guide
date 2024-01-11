@@ -4,6 +4,7 @@ import Header from "../layout/Header"
 import Footer from "../layout/Footer"
 import MovieCard from "../MovieCard"
 import styles from "./Search.module.css"
+
 function Search() {
     const [searchParams] = useSearchParams()
     const [movies, setMovies] = useState([])

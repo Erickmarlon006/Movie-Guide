@@ -1,11 +1,14 @@
-.footer{
-    display: grid;
-    place-items: center;
-    height: 80px;
-    background-color: orange;   
+.footer {
+  display: grid;
+  place-items: center;
+  height: 80px;
+  background-color: orange;
 }
 @media screen and (max-width: 600px) {
-    .footer{
-        height: 120px;
-    }
+  .footer {
+    height: 120px;
+  }
+  .footer h4{
+    font-size: 1.3em;
+  }
 }

@@ -1,10 +1,10 @@
 import { useState, useEffect, useRef } from "react";
-import styles from "./Content.module.css"
-import MovieCard from "./MovieCard";
 import { FaArrowLeft } from "react-icons/fa";
+import MovieCard from "./MovieCard";
 import { FaArrowRight } from "react-icons/fa";
+import styles from "./Content.module.css"
 
-function Main() {
+function Content() {
     const [topRatedMovies, setTopRatedMovies] = useState([])
     const [popularMovies, setPopularMovies] = useState([])
     const [nowPlayingMovies, setNowPlayingMovies] = useState([])
@@ -15,15 +15,11 @@ function Main() {
     const carousel3 = useRef(null);
     const carousel4 = useRef(null);
 
-
     useEffect(() => {
         getTopRatedMovies();
         getPopularMovies();
         getNowPlayingMovies();
         getUpcomingMovies();
-
-
-
     }, [])
 
     function getTopRatedMovies() {
@@ -156,4 +152,4 @@ function Main() {
     )
 
 }
-export default Main
+export default Content

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { FaStar } from "react-icons/fa6";
 import PropTypes from "prop-types"
 import styles from "./MovieCard.module.css"
 
@@ -14,7 +15,10 @@ function MovieCard({ movie }) {
                 <div>
                     <h3>{movie.title}</h3>
                     <p>{getYearFromDate(movie.release_date)}</p>
-                    <p>{movie.vote_average.toFixed(2)}</p>
+                    <div className={styles.vote_average_place}>
+                        <FaStar className={styles.star_svg} />
+                        <p>{movie.vote_average.toFixed(2)}</p>
+                    </div>
 
                 </div>
             </Link>
@@ -24,6 +28,5 @@ function MovieCard({ movie }) {
 }
 MovieCard.propTypes = {
     movie: PropTypes.object.isRequired
-
 }
 export default MovieCard

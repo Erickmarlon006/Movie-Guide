@@ -1,8 +1,9 @@
 import { IoSearch } from "react-icons/io5";
-import styles from "./Header.module.css"
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Home from "../pages/Home";
+import styles from "./Header.module.css"
+
 function Header() {
     const [search, setSearch] = useState("");
     const navigate = useNavigate();
@@ -19,7 +20,7 @@ function Header() {
     return (
         <header className={styles.header}>
             <nav>
-                <Link to="/" element={<Home />}><h3>Movie Guide</h3></Link>
+                <Link to="/Movie-Guide" element={<Home />}><h3>Movie Guide</h3></Link>
             </nav>
             <form onSubmit={(e) => handleSubmit(e)}>
                 <input type="text" onChange={(e) => setSearch(e.target.value)} placeholder="Pesquise um título" value={search} />

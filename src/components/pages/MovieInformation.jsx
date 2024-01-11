@@ -1,8 +1,10 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import styles from "./MovieInformation.module.css"
+import { FaStar } from "react-icons/fa6";
 import Header from "../layout/Header";
 import Footer from "../layout/Footer";
+import styles from "./MovieInformation.module.css"
+
 function MovieInformation() {
     const { id } = useParams();
     const [movie, setMovie] = useState(null)
@@ -38,7 +40,10 @@ function MovieInformation() {
                             <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt="" />
                             <div className={styles.informations_place}>
                                 <h2>{movie.title}</h2>
-                                <h3>{movie.vote_average}</h3>
+                                <span>
+                                    <FaStar className={styles.star_svg} />
+                                    <h3>{movie.vote_average.toFixed(2)}</h3>
+                                </span>
                                 <span>
                                     <h3>{getYearFromDate(movie.release_date)}</h3>
                                     <h3>{movie.runtime} minutos</h3>
