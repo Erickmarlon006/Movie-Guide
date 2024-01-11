@@ -9,9 +9,9 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/Movie-Guide" element={<Home />}></Route>
-        <Route path="/search" element={<Search />}></Route>
-        <Route path="/movie-information/:id" element={<MovieInformation />}></Route>
+        <Route path="/Movie-Guide/" element={<Home />}></Route>
+        <Route path="/Movie-Guide/search" element={<Search />}></Route>
+        <Route path="/Movie-Guide/movie-information/:id" element={<MovieInformation />}></Route>
       </Routes>
     </Router>
 

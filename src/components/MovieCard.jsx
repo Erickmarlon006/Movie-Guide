@@ -10,7 +10,7 @@ function MovieCard({ movie }) {
     }
     return (
         <div className={styles.movie_card}>
-            <Link to={`/movie-information/${movie.id}`}>
+            <Link to={`/Movie-Guide/movie-information/${movie.id}`}>
                 <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt="" />
                 <div>
                     <h3>{movie.title}</h3>

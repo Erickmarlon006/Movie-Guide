@@ -13,7 +13,7 @@ function Header() {
         e.preventDefault();
         if (!search) return
 
-        navigate(`/search?q=${search}`);
+        navigate(`/Movie-Guide/search?q=${search}`);
         setSearch("");
     }
 
